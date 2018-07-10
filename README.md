@@ -4,7 +4,7 @@
 
 Welcome to Addison Global Frontend Tech test.
 
-The main goal of this exercise is to assess how you reason about you're ability to write clean, well tested and reusable code. There's no hard rules or tricky questions.
+The primary goal of this exercise is to assess how you reason about your ability to write clean, well tested and reusable code. There's no hard rules or tricky questions.
 
 **We hope you have fun.**
 
@@ -21,11 +21,11 @@ This exercise is comprised of two views:
 
 When the page loads, you should fetch the data to render the `event list`. Each event must contain the event name and a list of markets associated with that event. For each of those markets, its name should be displayed alongside a button for each associated selection. Please see the [screens section](#screens) for more details.
 
-**Please be aware that an event may have 0 markets and in that case the event should be ignored (not displayed).** For the purpose of this exercise you can consider that every market has at least one selection.
+**Please be aware that an event may have 0 markets and in that case, the event should be ignored (not displayed).** For the purpose of this exercise, you can consider that every market has at least one selection.
 
 When a selection on the event list is clicked, it should change its color to green. Also, you should add it on the betslip by displaying its name, price and a remove button.
 
-When the remove button for a selection in the betslip is clicked, the selection should be removed from the betslip and the corresponding button on the event list should switch to it's default color. The same behaviour should apply when a user clicks on a previously added selection (green button) on the event list.
+When the remove button for a selection in the betslip is clicked, the selection should be removed from the betslip, and the corresponding button on the event list should switch to its default color. The same behaviour should apply when a user clicks on a previously added selection (green button) on the event list.
 
 ## Data
 
@@ -34,7 +34,7 @@ We've provided an endpoint that can be accessed in the following URL:
 
 ![Data Diagram](img/data-structure.png "Data Diagram")
 
-**Although our endpoint provides hierarchical data, we suggest you to normalize the data in a way that's more convenient for your application.** Please provide justification to your choice.
+**Although our endpoint provides hierarchical data, we suggest you normalize the data in a way that's more convenient for your application.** Please provide justification for your choice.
 
 You can also find a sample of the data [data.json](data.json)
 
@@ -46,23 +46,23 @@ type ResponseType = EventsType[];
 
 /** Event Entity */
 type EventType = {
-	id: string,
-	name: string,
-	markets: MarketType[],
+    id: string,
+    name: string,
+    markets: MarketType[],
 };
 
 /** Market Entity */
 type MarketType = {
-	id: string,
-	name: string,
-	markets: SelectionType[],
+    id: string,
+    name: string,
+    markets: SelectionType[],
 }
 
 /** Selection Entity */
 type SelectionType = {
-	id: string,
-	name: string,
-	price: number,
+    id: string,
+    name: string,
+    price: number,
 }
 ```
 
@@ -70,7 +70,7 @@ type SelectionType = {
 
 At Addison Global, we're big fans of React and Redux and, as such, we encourage you to solve the task in this stack. If you choose to do so, you can use <a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a> to get started or any other boilerplate.
 
-You're also free to use a component library to get you started and/or any other package that you find required.
+You're also free to use a component library to get you started and any other package that you find required.
 
 **Despite the above stack, we accept answers in the language/framework of your choice.**
 
@@ -78,6 +78,7 @@ You're also free to use a component library to get you started and/or any other 
 > You can find a prototype outlining the basic functionality here:
 <a href="https://marvelapp.com/2c4f5ia/screen/33947906" target="_blank">Prototype</a>
 
+The provided screens are a wireframe, not a final design for the application. You are expected to implement the user interface by yourself. The use of component libraries, like Material UI, Native Base, might make this easier for you and is encouraged.
 
 ### Event List View
 
@@ -107,4 +108,3 @@ You're also free to use a component library to get you started and/or any other 
 
 * A Readme.md file explaining the decisions you've made solving this task including technology and library choices.
 * Any instructions required to run your solution and tests in a Linux environment.
-
