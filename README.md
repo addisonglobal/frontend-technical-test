@@ -68,11 +68,15 @@ type SelectionType = {
 
 ## Technology
 
-At Addison Global, we're big fans of React and Redux and, as such, we encourage you to solve the task in this stack. If you choose to do so, you can use <a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a> to get started or any other boilerplate.
+At Addison Global, we're big fans of React and React Native. Our stack consists of React, Redux, Redux-Saga, Flow, Ramda.js, Reselect, and Jest. we encourage you to solve the task in this stack, if you're comfortable with it. Solutions using React Native are preferred. If you choose to use web platform to implement your solution then <a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a> is a standard way of starting the project.
 
 You're also free to use a component library to get you started and any other package that you find required.
 
-**Despite the above stack, we accept answers in the language/framework of your choice.**
+Static type checking is a great way to introduce additional level of safety into your code and we welcome both solutions written using Flow or TypeScript.
+
+**Despite the above stack, we accept answers using different choices of libraries as long as you keep React.js.**
+
+We like to write clean code using proper programming patterns and JavaScript best practices and expect you to strive to do the same.
 
 ## Screens
 > You can find a prototype outlining the basic functionality here:
@@ -99,6 +103,10 @@ The provided screens are a wireframe, not a final design for the application. Yo
 * With Selections
 
 ![Betslip - With Selection](img/betslip-with-selection.png "Betslip - With Selection")
+
+## Tests
+
+We expect you to provide tests alongside your code. The minimum requirement is that the code will be unit tested. End to end tests are a big plus. From our experience Cypress.js works very well for web tests and Detox is a great library for React Native application testing, but you're free to pick your favourite.
 
 ## The Deliverable
 
