@@ -68,7 +68,7 @@ type SelectionType = {
 
 ## Technology
 
-At Addison Global, we're big fans of React and React Native. Our stack consists of React, Redux, Redux-Saga, Flow, Ramda.js, Reselect, and Jest. we encourage you to solve the task in this stack, if you're comfortable with it. Solutions using React Native are preferred. If you choose to use web platform to implement your solution then <a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a> is a standard way of starting the project.
+At Addison Global, we're big fans of React. Our stack consists of React, Hooks, Typescript, State machines with Xstate, Ramda.js, CSS in JS with Emotion, Cypress and Jest. we encourage you to solve the task in this stack, if you're comfortable with it. Solutions using React are preferred. If you choose to use web platform to implement your solution then <a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a> is a standard way of starting the project.
 
 You're also free to use a component library to get you started and any other package that you find required.
 
@@ -82,7 +82,7 @@ We like to write clean code using proper programming patterns and JavaScript bes
 > You can find a prototype outlining the basic functionality here:
 <a href="https://marvelapp.com/2c4f5ia/screen/33947906" target="_blank">Prototype</a>
 
-The provided screens are a wireframe, not a final design for the application. You are expected to implement the user interface by yourself. The use of component libraries, like Material UI, Native Base, might make this easier for you and is encouraged.
+The provided screens are a wireframe, not a final design for the application. You are expected to implement the user interface by yourself. The use of component libraries, like Material UI, might make this easier for you and is encouraged.
 
 ### Event List View
 
@@ -106,7 +106,7 @@ The provided screens are a wireframe, not a final design for the application. Yo
 
 ## Tests
 
-We expect you to provide tests alongside your code. The minimum requirement is that the code will be unit tested. End to end tests are a big plus. From our experience Cypress.js works very well for web tests and Detox is a great library for React Native application testing, but you're free to pick your favourite.
+We expect you to provide tests alongside your code. The minimum requirement is that the code will be unit tested. End to end tests are a big plus. From our experience Cypress.js works very well for web tests and Detox is a great library for React  application testing, but you're free to pick your favourite.
 
 ## The Deliverable
 
