@@ -19,7 +19,7 @@ This exercise is comprised of two views:
 * Event List - a list of events, markets and selections
 * Betslip - List of selections that the user is betting on
 
-When the page loads, you should fetch the data to render the `event list`. Each event must contain the event name and a list of markets associated with that event. For each of those markets, its name should be displayed alongside a button for each associated selection. Please see the [screens section](#screens) for more details.
+When the page loads, you should fetch the data to render the **event list**. Each event must contain the event name and a list of markets associated with that event. For each of those markets, its name should be displayed alongside a button for each associated selection. Please see the [screens section](#screens) for more details.
 
 **Please be aware that an event may have 0 markets and in that case, the event should be ignored (not displayed).** For the purpose of this exercise, you can consider that every market has at least one selection.
 
@@ -46,33 +46,33 @@ type ResponseType = EventsType[];
 
 /** Event Entity */
 type EventType = {
-    id: string,
-    name: string,
-    markets: MarketType[],
+    id: string;
+    name: string;
+    markets: MarketType[];
 };
 
 /** Market Entity */
 type MarketType = {
-    id: string,
-    name: string,
-    markets: SelectionType[],
+    id: string;
+    name: string;
+    markets: SelectionType[];
 }
 
 /** Selection Entity */
 type SelectionType = {
-    id: string,
-    name: string,
-    price: number,
+    id: string;
+    name: string;
+    price: number;
 }
 ```
 
 ## Technology
 
-At Addison Global, we're big fans of React. Our stack consists of React, Hooks, Typescript, State machines with Xstate, Ramda.js, CSS in JS with Emotion, Cypress and Jest. we encourage you to solve the task in this stack, if you're comfortable with it. Solutions using React are preferred. If you choose to use web platform to implement your solution then <a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a> is a standard way of starting the project.
+At Addison Global, we're big fans of React. Our stack consists of React (with hooks), TypeScript, XState, RxJS, Ramda, CSS in JS with Emotion. We are using Cypress for integration tests and Jest for unit tests. We encourage you to solve the task in this stack, if you're comfortable with it. Solutions using React are preferred. <a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a> is a standard option to create a new React project and you are free to use it if you choose to.
 
 You're also free to use a component library to get you started and any other package that you find required.
 
-Static type checking is a great way to introduce additional level of safety into your code and we welcome both solutions written using Flow or TypeScript.
+Static type checking is a great way to introduce additional level of safety into your code and we welcome solutions written in TypeScript (or Flow, if you are more familiar with it).
 
 **Despite the above stack, we accept answers using different choices of libraries as long as you keep React.js.**
 
@@ -82,7 +82,7 @@ We like to write clean code using proper programming patterns and JavaScript bes
 > You can find a prototype outlining the basic functionality here:
 <a href="https://marvelapp.com/2c4f5ia/screen/33947906" target="_blank">Prototype</a>
 
-The provided screens are a wireframe, not a final design for the application. You are expected to implement the user interface by yourself. The use of component libraries, like Material UI, might make this easier for you and is encouraged.
+**The provided screens are a wireframe, not a final design for the application.** You are expected to implement the user interface by yourself. The use of component libraries, like Material UI, might make this easier for you and is encouraged.
 
 ### Event List View
 
@@ -106,13 +106,13 @@ The provided screens are a wireframe, not a final design for the application. Yo
 
 ## Tests
 
-We expect you to provide tests alongside your code. The minimum requirement is that the code will be unit tested. End to end tests are a big plus. From our experience Cypress.js works very well for web tests and Detox is a great library for React  application testing, but you're free to pick your favourite.
+We expect you to provide tests alongside your code. The minimum requirement is that the code will be unit tested. End to end tests are a big plus. From our experience Cypress.js works very well for React application testing, but you're free to pick your favourite.
 
 ## The Deliverable
 
-* A bundled/archived repository showing your commit history or a link to an accessible private repository with your work in (Github can host private repositories at a cost; there is no charge for doing so with Bitbucket). Git example for sending us a standalone bundle:
+* A bundled/archived repository showing your commit history or a link to an accessible private repository with your work in (Github can host personal private repositories for free). Git example for sending us a standalone bundle:
 
         git bundle create <yourname>.bundle --all --branches
 
-* A Readme.md file explaining the decisions you've made solving this task including technology and library choices.
+* A README.md file explaining the decisions you've made solving this task including technology and library choices.
 * Any instructions required to run your solution and tests in a Linux environment.
